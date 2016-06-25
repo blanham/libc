@@ -805,6 +805,7 @@ extern {
 
 cfg_if! {
     if #[cfg(any(target_os = "linux",
+                 target_os = "chicken",
                  target_os = "android",
                  target_os = "emscripten"))] {
         mod notbsd;
